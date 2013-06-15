@@ -7,8 +7,15 @@
 //
 
 #import "AGViewController.h"
+#import "AGAirGestureRecognizer.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface AGViewController ()
+{
+    AGAirGestureRecognizer *air;
+    
+    __weak IBOutlet UIView *box;
+}
 
 @end
 
@@ -18,6 +25,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    air = [[AGAirGestureRecognizer alloc] init];
+    
+    [air setBlock:^(CGPoint center, float intensity){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            box.layer.transform = CATransform3DMakeTranslation( (0.5-center.x) * 200, (0.5-center.y) * 200, 0);
+        });
+    }];
 }
 
 - (void)didReceiveMemoryWarning

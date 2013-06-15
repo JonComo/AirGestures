@@ -18,7 +18,31 @@
 		8605ED71176D278200DB6703 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8605ED70176D278200DB6703 /* Default-568h@2x.png */; };
 		8605ED74176D278200DB6703 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8605ED72176D278200DB6703 /* MainStoryboard.storyboard */; };
 		8605ED77176D278200DB6703 /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8605ED76176D278200DB6703 /* AGViewController.m */; };
+		8605EF7D176D286E00DB6703 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605EF7C176D286E00DB6703 /* CoreMedia.framework */; };
+		8605EF7E176D287100DB6703 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605EF79176D27AE00DB6703 /* libGPUImage.a */; };
+		8605EF80176D287700DB6703 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605EF7F176D287700DB6703 /* CoreVideo.framework */; };
+		8605EF82176D289D00DB6703 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605EF81176D289D00DB6703 /* OpenGLES.framework */; };
+		8605EF84176D28A100DB6703 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605EF83176D28A100DB6703 /* QuartzCore.framework */; };
+		8605EF86176D28A600DB6703 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605EF85176D28A600DB6703 /* AVFoundation.framework */; };
+		8605EF89176D2E4B00DB6703 /* AGAirGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8605EF88176D2E4B00DB6703 /* AGAirGestureRecognizer.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8605EF78176D27AE00DB6703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8605EF72176D27AE00DB6703 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		8605EF7A176D27AE00DB6703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8605EF72176D27AE00DB6703 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8605ED57176D278200DB6703 /* AirGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +61,14 @@
 		8605ED73176D278200DB6703 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8605ED75176D278200DB6703 /* AGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGViewController.h; sourceTree = "<group>"; };
 		8605ED76176D278200DB6703 /* AGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGViewController.m; sourceTree = "<group>"; };
+		8605EF72176D27AE00DB6703 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../Libraries/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		8605EF7C176D286E00DB6703 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8605EF7F176D287700DB6703 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8605EF81176D289D00DB6703 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8605EF83176D28A100DB6703 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8605EF85176D28A600DB6703 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8605EF87176D2E4B00DB6703 /* AGAirGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAirGestureRecognizer.h; sourceTree = "<group>"; };
+		8605EF88176D2E4B00DB6703 /* AGAirGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAirGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8605EF86176D28A600DB6703 /* AVFoundation.framework in Frameworks */,
+				8605EF84176D28A100DB6703 /* QuartzCore.framework in Frameworks */,
+				8605EF82176D289D00DB6703 /* OpenGLES.framework in Frameworks */,
+				8605EF80176D287700DB6703 /* CoreVideo.framework in Frameworks */,
+				8605EF7E176D287100DB6703 /* libGPUImage.a in Frameworks */,
+				8605EF7D176D286E00DB6703 /* CoreMedia.framework in Frameworks */,
 				8605ED5B176D278200DB6703 /* UIKit.framework in Frameworks */,
 				8605ED5D176D278200DB6703 /* Foundation.framework in Frameworks */,
 				8605ED5F176D278200DB6703 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +111,12 @@
 		8605ED59176D278200DB6703 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8605EF85176D28A600DB6703 /* AVFoundation.framework */,
+				8605EF83176D28A100DB6703 /* QuartzCore.framework */,
+				8605EF81176D289D00DB6703 /* OpenGLES.framework */,
+				8605EF7F176D287700DB6703 /* CoreVideo.framework */,
+				8605EF7C176D286E00DB6703 /* CoreMedia.framework */,
+				8605EF72176D27AE00DB6703 /* GPUImage.xcodeproj */,
 				8605ED5A176D278200DB6703 /* UIKit.framework */,
 				8605ED5C176D278200DB6703 /* Foundation.framework */,
 				8605ED5E176D278200DB6703 /* CoreGraphics.framework */,
@@ -88,6 +132,8 @@
 				8605ED72176D278200DB6703 /* MainStoryboard.storyboard */,
 				8605ED75176D278200DB6703 /* AGViewController.h */,
 				8605ED76176D278200DB6703 /* AGViewController.m */,
+				8605EF87176D2E4B00DB6703 /* AGAirGestureRecognizer.h */,
+				8605EF88176D2E4B00DB6703 /* AGAirGestureRecognizer.m */,
 				8605ED61176D278200DB6703 /* Supporting Files */,
 			);
 			path = AirGestures;
@@ -105,6 +151,15 @@
 				8605ED70176D278200DB6703 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8605EF73176D27AE00DB6703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8605EF79176D27AE00DB6703 /* libGPUImage.a */,
+				8605EF7B176D27AE00DB6703 /* GPUImageTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +202,35 @@
 			mainGroup = 8605ED4E176D278200DB6703;
 			productRefGroup = 8605ED58176D278200DB6703 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8605EF73176D27AE00DB6703 /* Products */;
+					ProjectRef = 8605EF72176D27AE00DB6703 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8605ED56176D278200DB6703 /* AirGestures */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8605EF79176D27AE00DB6703 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 8605EF78176D27AE00DB6703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8605EF7B176D27AE00DB6703 /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = 8605EF7A176D27AE00DB6703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8605ED55176D278200DB6703 /* Resources */ = {
@@ -177,6 +255,7 @@
 				8605ED67176D278200DB6703 /* main.m in Sources */,
 				8605ED6B176D278200DB6703 /* AGAppDelegate.m in Sources */,
 				8605ED77176D278200DB6703 /* AGViewController.m in Sources */,
+				8605EF89176D2E4B00DB6703 /* AGAirGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +342,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirGestures/AirGestures-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$PROJECT_DIR/../Libraries/GPUImage/framework/Source/**";
 				INFOPLIST_FILE = "AirGestures/AirGestures-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,7 +355,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirGestures/AirGestures-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$PROJECT_DIR/../Libraries/GPUImage/framework/Source/**";
 				INFOPLIST_FILE = "AirGestures/AirGestures-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
